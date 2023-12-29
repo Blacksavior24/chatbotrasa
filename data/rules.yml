@@ -1,0 +1,7 @@
+version: "3.1"
+
+rules:
+- rule: Responder a un saludo
+  steps:
+  - intent: saludo
+  - action: action_saludo

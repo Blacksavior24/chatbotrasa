@@ -1,0 +1,24 @@
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - Hola
+    - ¿Cómo estás?
+    - Buenos días
+
+- intent: despedida
+  examples: |
+    - Adiós
+    - Hasta luego
+    - Chao
+
+- intent: consultar_tiempo
+  examples: |
+    - ¿Cómo está el clima hoy?
+    - ¿Va a llover mañana?
+    
+- intent: informacion_personal
+  examples: |
+    - Mi nombre es wardbot
+    - Vivo en Perú

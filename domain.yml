@@ -1,0 +1,26 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - consultar_tiempo
+  - informacion_personal
+
+responses:
+  utter_saludo:
+    - text: "¡Hola! ¿En qué puedo ayudarte?"
+    - text: "Hola, ¿cómo puedo asistirte hoy?"
+    - text: "¡Hola! ¿Qué tal estás?"
+  utter_despedida:
+    - text: "Hasta luego"
+
+actions:
+  - action_saludo
+
+entities:
+  - persona
+  - locación
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
